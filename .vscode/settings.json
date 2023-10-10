@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        // 拡張機能のBlack Formatterを使う
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        // ファイルの保存時にフォーマットを自動実行
+        "editor.formatOnSave": true
+    },
+    // 最大文字数などのオプション引数を指定
+    "black-formatter.args": [
+        "--line-length=120"
+    ],
+    // リンターの設定
+    "flake8.args": [
+        "--max-line-length=120",
+        "--ignore=E203,W503,W504"
+    ]
+}
